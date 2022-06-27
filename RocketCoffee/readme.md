@@ -1,0 +1,1 @@
+In this repository I'm adding my version of the coding challenges provided by the Rocketseat platform. Some of them may have modifications and expansions in the future as I learn to implement new features.
