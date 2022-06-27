@@ -1,0 +1,107 @@
+body {
+    height: 768px;
+    width: 1360px;
+    margin: 0;
+    color: #FFFFFF;
+    background: #000000;
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+}
+
+#blurA {
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    background: #996DFF;
+    filter: blur(400px);
+    left: -29px;
+    top: 495px;
+}
+
+#blurB {
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    background: #996DFF;
+    filter: blur(400px);
+    left: 1127px;
+    top: -63px;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    width: 918px;
+    height: 50px;
+    left: 280px;
+    top: 50px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    width: 431.35px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+
+button {
+    margin: auto 0;
+    padding: 11px 36px;
+    gap: 10px;
+    width: 172px;
+    height: 37px;
+    border: 1px solid #8257E5;
+    border-radius: 6px;
+    background: transparent;
+
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-size: 15px;
+    font-weight: 800;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+}
+
+main {
+    position: absolute;
+    width: 548px;
+    height: 204px;
+    left: 406px;
+    top: 140px;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 109px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+#greatCode {
+    color: black;
+    text-shadow:
+        -1px -1px 0 #8257E5,  
+        1px -1px 0 #8257E5,
+        -1px 1px 0 #8257E5,
+        1px 1px 0 #8257E5;
+}
+
+aside {
+    position: absolute;
+    width: 798.78px;
+    height: 506.47px;
+    left: 281px;
+    top: 319px;
+}
