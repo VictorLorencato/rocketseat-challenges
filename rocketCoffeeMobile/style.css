@@ -51,35 +51,60 @@ header {
     left: 379px;
     visibility: visible;
 }
-#closeMenu {
-    width: 48px;
-    height: auto;
-}
+
 
 #menu {
     position: absolute;
     visibility: hidden;
     z-index: 1;
+    height: 100vh;
+    width: 100vw;
     background: var(--background);
 }
-#menu div {
+#menuHeader {
     position: absolute;
     width: 388px;
     height: 48px;
     left: 20px;
     top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
-#menu a {
+#menuHeader #logo {
+    position: relative;
+    width: 171px;
+    height: auto;
+    margin-left: -30px;
+}
+#closeMenu {
+    width: 20px;
+    height: auto;
+    margin-right: 14px;
+}
+#menu #menuBody {
+    position: absolute;
+    top: 104px;
+    border-top: 0.5px solid var(--border);
+}
+#menu #menuBody a {
     display: flex;
     flex-direction: column;
     height: 57px;
     width: 100vw;
-    border: 1px solid var(--border-menu-mobile);
+    border: 0.5px solid var(--border);
+    border-top: none;
     font-family: 'Manrope', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: var(--text-color-menu-mobile);
+    color: var(--border-menu-mobile);
     text-decoration: none;
+    justify-content: center;
+    padding-left: 7.2%;
+}
+
+.selected {
+    color: var(--text-color-menu-mobile);
+    border-left: 4px solid var(--button);
 }
 
 .preText {
