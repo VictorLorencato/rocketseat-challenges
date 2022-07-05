@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
@@ -14,25 +15,30 @@
 <body>
     <div id="blur"></div>
     <header>
-        <img src="assets/logo-mobile.svg" alt="Rocketseat">
+        <img src="assets/logo-mobile.svg" id="logo" alt="Rocketseat">
         <img src="assets/menu-buguer-open.svg" id="openMenu" alt="Abrir menu">
-        <img src="assets/menu-buguer-close.svg" id="closeMenu" alt="Fechar menu">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Recompensas</a>
-            <a href="#">Gift Cards</a>
-            <a href="#">Lojas</a>
-        </nav>
     </header>
+    <nav id="menu">
+        <div>
+            <img src="assets/logo-mobile.svg" id="logo" alt="Rocketseat">
+            <img src="assets/menu-buguer-close.svg" id="closeMenu" alt="Fechar menu">
+        </div>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Recompensas</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Lojas</a>
+        <div></div>
+    </nav>
     <main>
         <div class="preText">O café que fará seu código decolar para o próximo nível.</div>
         <button>PEGAR MEU CAFÉ &gt;</button>
         <div class="mainText">
             <div>Great coffee</div>
-            <svg viewBox="0 0 343 68"><text x="0" y="50px" font-size="60px" style="fill: none; stroke: #8257E5; stroke-width: 2px" id="greatCode">&lt;Great code/&gt;</text></svg>
+            <div id="greatCode">&lt;Great code/&gt;</div>
         </div>
         <img src="assets/rocket-coffee.png" alt="Café rocket">
     </main>
+    <script src="scrypts.js"></script>
 </body>
 </html>

@@ -14,6 +14,7 @@ body {
     color: var(--text-color);
     margin: 0px;
     font-family: 'Manrope', sans-serif;
+    overflow: hidden;
 }
 #blur {
     position: absolute;
@@ -27,18 +28,58 @@ body {
 
 header {
     position: absolute;
-    width: 433px;
+    width: 427px;
     height: 58.5px;
     top: 37px;
-    left: -3px;
+    left: 0px;
+    border-bottom: 1px solid var(--border-menu-mobile);
 }
 
-nav {
-    visibility: hidden;
+#logo {
+    width: 171px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 26px;
 }
 
 #openMenu {
+    width: 24px;
+    height: auto;
+    position: absolute;
+    top: 12px;
+    left: 379px;
+    visibility: visible;
+}
+#closeMenu {
+    width: 48px;
+    height: auto;
+}
+
+#menu {
+    position: absolute;
     visibility: hidden;
+    z-index: 1;
+    background: var(--background);
+}
+#menu div {
+    position: absolute;
+    width: 388px;
+    height: 48px;
+    left: 20px;
+    top: 30px;
+}
+#menu a {
+    display: flex;
+    flex-direction: column;
+    height: 57px;
+    width: 100vw;
+    border: 1px solid var(--border-menu-mobile);
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color-menu-mobile);
+    text-decoration: none;
 }
 
 .preText {
@@ -47,6 +88,8 @@ nav {
     height: 128px;
     top: 184px;
     left: 28px;
+    font-size: 30px;
+    text-align: center;
 }
 
 button {
@@ -85,17 +128,20 @@ button {
 
 #greatCode {
     height: 68px;
-    stroke: #8257E5;
-    font-family: sans-serif;
+    font-family: 'Manrope', sans-serif;
+    color:rgba(0, 0, 0, 0.8);
+    text-shadow: 
+        -1px -1px 0 var(--button), 
+        1px -1px 0 var(--button), 
+        -1px 1px 0 var(--button), 
+        1px 1px 0 var(--button);
     font-size: 50px;
     top: 593px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 main img {
     position: absolute;
-    top: 687px;
-    width: 428px;
+    top: 712px;
+    width: 100vw;
     height: auto;
-
 }
